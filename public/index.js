@@ -47,7 +47,7 @@ function getCities() {
                 `
 
                 countryList.innerHTML += countryCard
-            })
+            }) 
         })
 }
 

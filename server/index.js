@@ -8,7 +8,7 @@ const {seed, getCountries, getCities, createCity, deleteCity} = require('./contr
 app.use(express.json())
 app.use(cors())
 
-// DEV
+ // DEV
 app.post('/seed', seed)
 
 // COUNTRIES
