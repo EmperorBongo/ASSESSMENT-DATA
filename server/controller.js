@@ -261,8 +261,7 @@ module.exports = {
         FROM cities a
         JOIN countries b
         ON b.country_id = a.country_id
-        
-    `).then((dbRes) => {
+        `).then((dbRes) => {
         res.status(200).send(dbRes[0])
     }).catch(err => console.log('Error Getting City', err))
 },
