@@ -249,9 +249,9 @@ module.exports = {
             .catch(err => console.log('error creating city', err));
         },
         
-
+// I spent 2 days on this. 
   getCities: (req, res) => {
-         sequelize.query(`
+        sequelize.query(`
          SELECT
         a.city_id AS city_id,
         a.name AS city,
@@ -261,6 +261,7 @@ module.exports = {
         FROM cities a
         JOIN countries b
         ON b.country_id = a.country_id
+        
     `).then((dbRes) => {
         res.status(200).send(dbRes[0])
     }).catch(err => console.log('Error Getting City', err))

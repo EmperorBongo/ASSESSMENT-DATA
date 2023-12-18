@@ -44,7 +44,7 @@ function getCities() {
                     <h3>Rating: ${elem.rating}/5</h3>
                     <button onclick="deleteCard(${elem['city_id']})">Delete</button>
                     </div>
-                `
+                 `
 
                 countryList.innerHTML += countryCard
             }) 
